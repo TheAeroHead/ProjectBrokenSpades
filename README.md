@@ -6,3 +6,8 @@ Requires:
   2. Express
   3. Sequelize
   4. PostgresSQL (https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+
+To Test:
+  1. After pull/clone, navigate to project-broken-spades subfolder in shell (cd project-broken-spades).
+  2. Run npm install.
+  3. Run npm start.
