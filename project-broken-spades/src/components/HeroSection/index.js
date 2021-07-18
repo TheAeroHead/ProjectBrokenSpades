@@ -21,7 +21,17 @@ const HeroSection = () => {
 					Welcome to the Broken Spades Homepage!
 				</HeroP>
 				<HeroButtonWrapper>
-					<Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
+					<Button to="sign-up" 
+						onMouseEnter={onHover} 
+						onMouseLeave={onHover} 
+						primary="true" 
+						dark="true"
+						smooth={true} 
+						duration={500} 
+						spy={true} 
+						exact='true' 
+						offset={-80}
+					>
 						Get started {hover ? <ArrowForward/> : <ArrowRight/>}
 					</Button>
 				</HeroButtonWrapper>

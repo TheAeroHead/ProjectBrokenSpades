@@ -3,7 +3,9 @@ import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import InfoSection from '../components/InfoSection'
-import { AboutSection } from '../components/InfoSection/Data'
+import { AboutSection, WhoWeAreSection, WhatWeDoSection, SignUpSection } from '../components/InfoSection/Data'
+import Services from '../components/ServicesSection'
+import Footer from '../components/Footer'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +21,12 @@ const Home = () => {
             <Navbar toggle={toggle}/>
             <HeroSection />
             <InfoSection {...AboutSection}/>
+            <InfoSection {...WhoWeAreSection}/>
+            <Services />
+            <InfoSection {...SignUpSection}/>
+            <Footer />
         </>
     )
 }
 
-export default Home
+export default Home;
